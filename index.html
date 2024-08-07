@@ -346,12 +346,6 @@
                                 pixel.className = font[char][i][k] ? 'pixel on' : 'pixel off';
                                 row.appendChild(pixel);
                             }
-                    } else {
-                        for (let k = 0; k < charWidth; k++) {
-                            const pixel = document.createElement('div');
-                            pixel.className = 'pixel off';
-                            row.appendChild(pixel);
-                        }
                     }
                     if (j < input.length - 1) {
                         for (let k = 0; k < spacing; k++) {
